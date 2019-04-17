@@ -167,12 +167,12 @@ public class MyBooking extends BaseAdapter {
                 Date checkin = startTime.getTime();
                 Date checkout = endTime.getTime();
                 if (checkin.before(now)) {
-                    Toast.makeText(activity, "You choosed Past Check in time", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(activity, "The start time has already elapsed", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
                 if (checkout.before(now) || checkout.before(checkin)){
-                    Toast.makeText(activity, "You choosed Wrong Check out time", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(activity, "The end time is before the start time", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
