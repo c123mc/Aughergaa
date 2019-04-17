@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".Fragments.Checkout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/header_image"
+        android:scaleType="fitXY"
+        android:contentDescription="Header Image"
+        />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="16dp"
+        android:textColor="@color/primary"
+        android:background="@drawable/border"
+        android:id="@+id/title_text"
+        />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="16dp"
+        android:textSize="17dp"
+        android:textColor="@color/primary"
+        android:background="@drawable/border"
+        android:id="@+id/sizes"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:id="@+id/price"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/extras"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_margin="16dp"
+                android:textSize="17dp"
+                android:textColor="@color/primary"
+                android:background="@drawable/border"
+                android:id="@+id/sizes_1"
+                />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_margin="16dp"
+                android:textSize="17dp"
+                android:textColor="@color/primary"
+                android:background="@drawable/border"
+                android:id="@+id/sizes_2"
+                />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_margin="16dp"
+                android:textSize="17dp"
+                android:textColor="@color/primary"
+                android:background="@drawable/border"
+                android:id="@+id/sizes_3"
+                />
+
+        </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_margin="16dp"
+        android:layout_height="wrap_content"
+        android:text="Buy Now"
+        android:id="@+id/payment_start"
+        android:background="@color/primary"
+        android:textColor="@android:color/white"
+        />
+    </LinearLayout>
+
+
+</ScrollView>

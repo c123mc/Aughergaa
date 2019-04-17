@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "796021957797",
+    "firebase_url": "https://aughergaa-b57ec.firebaseio.com",
+    "project_id": "aughergaa-b57ec",
+    "storage_bucket": "aughergaa-b57ec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:796021957797:android:696b83583ed1f30b",
+        "android_client_info": {
+          "package_name": "com.conor.aughergaa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "796021957797-37knop3buuvluvopu8k7f9fu622te6p6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLLO2DHGq4YXJJ-5vBA7pTgNb4NAoUKoc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "796021957797-37knop3buuvluvopu8k7f9fu622te6p6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:796021957797:android:8ceb970aa41ac927",
+        "android_client_info": {
+          "package_name": "com.noorpk.roombook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "796021957797-37knop3buuvluvopu8k7f9fu622te6p6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLLO2DHGq4YXJJ-5vBA7pTgNb4NAoUKoc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "796021957797-37knop3buuvluvopu8k7f9fu622te6p6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

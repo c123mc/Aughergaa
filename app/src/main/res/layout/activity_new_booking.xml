@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".NewBooking">
+
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/detailed_text"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/border"
+        android:textColor="@android:color/black"
+        android:id="@+id/booking_heading"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@drawable/border"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:textSize="17dp"
+        android:padding="8dp"
+        android:hint="Start Time"
+        android:textColor="@android:color/black"
+        android:id="@+id/start_timing"
+        android:layout_below="@+id/booking_heading"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@drawable/border"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:textSize="17dp"
+        android:padding="8dp"
+        android:hint="End Time"
+        android:textColor="@android:color/black"
+        android:id="@+id/end_timing"
+        android:layout_marginBottom="16dp"
+        android:layout_below="@+id/start_timing"
+        />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/booking_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="24dp"
+        android:padding="12dp"
+        android:background="@color/primary"
+        android:visibility="gone"
+        android:layout_below="@+id/btn_create_booking"
+        android:textColor="@android:color/white"
+        android:text="Already Booked"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_create_booking"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/end_timing"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:background="@color/primary"
+        android:textColor="@android:color/white"
+        android:text="Book Now"/>
+
+</LinearLayout>
