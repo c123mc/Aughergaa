@@ -1,6 +1,5 @@
 package com.conor.aughergaa.Fragments;
 
-
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -38,9 +37,6 @@ import java.util.Map;
 
 import static android.content.Context.MODE_PRIVATE;
 
-/**
- * A simple {@link Fragment} subclass.
- */
 public class Checkout extends Fragment {
 
     Button payment_start;
@@ -227,6 +223,7 @@ public class Checkout extends Fragment {
                             "Address: "+preferences.getString("Address","")+"\n" +
                             "Phone Number: "+preferences.getString("Mobile","")+"\n" +
                             "Email Address: "+preferences.getString("Email","");
+
                     //Creating SendMail object
                     SendMail sm = new SendMail(getActivity(), FirebaseAuth.getInstance().getCurrentUser().getEmail(), "Order Placed", msg);
 
@@ -239,12 +236,12 @@ public class Checkout extends Fragment {
                     Toast.makeText(getActivity(), "Order Placed", Toast.LENGTH_SHORT).show();
                     break;
                 case BraintreePaymentActivity.BRAINTREE_RESULT_DEVELOPER_ERROR:
-                    Toast.makeText(getActivity(), "Some Error occur", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), "An error has occurred", Toast.LENGTH_SHORT).show();
                 case BraintreePaymentActivity.BRAINTREE_RESULT_SERVER_ERROR:
 
-                    Toast.makeText(getActivity(), "Server Error occur", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), "A Server Error has occurred", Toast.LENGTH_SHORT).show();
                 case BraintreePaymentActivity.BRAINTREE_RESULT_SERVER_UNAVAILABLE:
-                    Toast.makeText(getActivity(), "Server Error occur", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), "A Server Error has occurred", Toast.LENGTH_SHORT).show();
                     // handle errors here, a throwable may be available in
                     // data.getSerializableExtra(BraintreePaymentActivity.EXTRA_ERROR_MESSAGE)
                     break;
