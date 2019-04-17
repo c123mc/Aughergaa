@@ -131,7 +131,7 @@ public class NewBooking extends AppCompatActivity {
                 Date checkin = startTime.getTime();
                 Date checkout = endTime.getTime();
                 if (checkin.before(now)) {
-                    Toast.makeText(NewBooking.this, "You chose and elapsed Start Time", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(NewBooking.this, "You chose an elapsed Start Time", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
