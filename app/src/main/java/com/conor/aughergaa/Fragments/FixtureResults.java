@@ -113,7 +113,7 @@ public class FixtureResults extends Fragment {
             public void onClick(View v) {
 
                 if (selected_calender == null){
-                    Toast.makeText(getActivity(), "Please select Match Timing", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), "Please select Match Time", Toast.LENGTH_SHORT).show();
                 }else if (team_1_name.getText().toString().isEmpty()){
                     Toast.makeText(getActivity(), "Please Enter Team 1 Name", Toast.LENGTH_SHORT).show();
                 }else if (team_2_name.getText().toString().isEmpty()){

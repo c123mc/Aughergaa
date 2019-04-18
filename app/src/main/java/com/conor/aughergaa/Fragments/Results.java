@@ -108,13 +108,13 @@ public class Results extends Fragment {
             @Override
             public void onClick(View v) {
                 if (team_1_first_value.getText().toString().isEmpty()){
-                    Toast.makeText(getActivity(), "Please fill the result", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), "Please enter the result", Toast.LENGTH_SHORT).show();
                 }else if (team_1_second_value.getText().toString().isEmpty()){
-                    Toast.makeText(getActivity(), "Please fill the result", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), "Please enter the result", Toast.LENGTH_SHORT).show();
                 }else if (team_2_first_value.getText().toString().isEmpty()){
-                    Toast.makeText(getActivity(), "Please fill the result", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), "Please enter the result", Toast.LENGTH_SHORT).show();
                 }else if (team_2_second_value.getText().toString().isEmpty()){
-                    Toast.makeText(getActivity(), "Please fill the result", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), "Please enter the result", Toast.LENGTH_SHORT).show();
                 }else {
                     FirebaseDatabase.getInstance().getReference().child("Result").child(Utils.results.get(i).getRef()).setValue(new MatchResultObjects(team_1_first_value.getText().toString()
                     ,team_1_second_value.getText().toString(),team_2_first_value.getText().toString(),team_2_second_value.getText().toString())).addOnSuccessListener(new OnSuccessListener<Void>() {

@@ -71,29 +71,29 @@ public class Lotto extends Fragment {
                     if (sizes.getSelectedItem().toString().equals(sizes_1.getSelectedItem().toString())||
                             sizes.getSelectedItem().toString().equals(sizes_2.getSelectedItem().toString())||
                             sizes.getSelectedItem().toString().equals(sizes_3.getSelectedItem().toString())){
-                        Toast.makeText(getActivity(), "You cannot select same number twics", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getActivity(), "You cannot select same number twice", Toast.LENGTH_SHORT).show();
                         return;
                     }
                     if (sizes_1.getSelectedItem().toString().equals(sizes.getSelectedItem().toString()) ||
                             sizes_1.getSelectedItem().toString().equals(sizes_2.getSelectedItem().toString())||
                             sizes_1.getSelectedItem().toString().equals(sizes_3.getSelectedItem().toString())){
-                        Toast.makeText(getActivity(), "You cannot select same number twics", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getActivity(), "You cannot select same number twice", Toast.LENGTH_SHORT).show();
                         return;
                     }
                     if (sizes_2.getSelectedItem().toString().equals(sizes.getSelectedItem().toString()) ||
                             sizes_2.getSelectedItem().toString().equals(sizes_1.getSelectedItem().toString())||
                             sizes_2.getSelectedItem().toString().equals(sizes_3.getSelectedItem().toString())){
-                        Toast.makeText(getActivity(), "You cannot select same number twics", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getActivity(), "You cannot select same number twice", Toast.LENGTH_SHORT).show();
                         return;
                     }
                     if (sizes_3.getSelectedItem().toString().equals(sizes.getSelectedItem().toString()) ||
                             sizes_3.getSelectedItem().toString().equals(sizes_1.getSelectedItem().toString())||
                             sizes_3.getSelectedItem().toString().equals(sizes_2.getSelectedItem().toString())){
-                        Toast.makeText(getActivity(), "You cannot select same number twics", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getActivity(), "You cannot select same number twice", Toast.LENGTH_SHORT).show();
                         return;
                     }
                     if (entrant.getText().toString().isEmpty()){
-                        Toast.makeText(getActivity(), "Entrant is empty", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getActivity(), "Entrant is empty, please enter a name", Toast.LENGTH_SHORT).show();
                         return;
                     }
                 setPayment_start();
